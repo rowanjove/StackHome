@@ -22,7 +22,7 @@ export function Header({
           <BrandMark />
         </div>
         <div>
-          <div className="brand-title">归栈 · 备份</div>
+          <div className="brand-title">StackHome · 备份</div>
           <div className="brand-subtitle">把重要文件留在手边，也留一条退路</div>
         </div>
       </div>

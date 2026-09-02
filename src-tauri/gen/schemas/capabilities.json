@@ -1,1 +1,1 @@
-{"default":{"identifier":"default","description":"归栈桌面端默认权限","local":true,"windows":["main"],"permissions":["core:default","dialog:default","opener:default"]}}
+{"default":{"identifier":"default","description":"StackHome 桌面端默认权限","local":true,"windows":["main"],"permissions":["core:default","dialog:default","opener:default"]}}

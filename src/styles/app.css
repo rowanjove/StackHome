@@ -312,7 +312,7 @@ button:disabled { cursor: not-allowed; opacity: .55; }
 @media (max-width: 1180px) { .organizer-controls { grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr) 120px; }.template-field { grid-column: span 2; }.organizer-controls > .btn-primary:last-child { grid-column: 4; }.quick-actions { grid-template-columns: repeat(2, 1fr); }.rules-layout { grid-template-columns: 1fr; }.restore-controls { grid-template-columns: 1fr 1fr; }.restore-controls .wide { grid-column: span 2; } }
 @media (max-width: 1080px) { .sidebar { width: 200px; flex-basis: 200px; }.catalog-layout { grid-template-columns: minmax(0, 1fr) 270px; }.workbench-layout { grid-template-columns: 1fr; }.filter-row { flex-wrap: wrap; }.progress-stats-grid, .summary-metrics-grid { grid-template-columns: repeat(2, 1fr); } }
 
-/* 归栈品牌层：纸张、索引签与档案柜，不使用 SaaS 式渐变和悬浮玻璃卡片。 */
+/* StackHome 品牌层：纸张、索引签与档案柜，不使用 SaaS 式渐变和悬浮玻璃卡片。 */
 body { letter-spacing: .005em; }
 .app-container { background: var(--bg); }
 .sidebar {

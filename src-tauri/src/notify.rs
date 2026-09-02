@@ -5,10 +5,10 @@ pub fn notify_backup_result(summary: &BackupSummary) -> Result<(), String> {
     #[cfg(windows)]
     {
         let title = match summary.status.as_str() {
-            "done" if summary.archive_error.is_some() => "归栈 · 备份完成，压缩失败",
-            "done" => "归栈 · 备份完成",
-            "cancelled" => "归栈 · 备份已取消",
-            _ => "归栈 · 备份异常",
+            "done" if summary.archive_error.is_some() => "StackHome · 备份完成，压缩失败",
+            "done" => "StackHome · 备份完成",
+            "cancelled" => "StackHome · 备份已取消",
+            _ => "StackHome · 备份异常",
         };
 
         let mut lines = Vec::new();

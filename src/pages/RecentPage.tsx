@@ -16,7 +16,7 @@ export function RecentPage({ onNavigate }: RecentPageProps) {
   return (
     <div className="page-stack">
       <section className="recent-intro">
-        <div className="recent-kicker">LOCAL FILE CABINET · 归栈</div>
+        <div className="recent-kicker">STACKHOME · LOCAL FILE WORKSPACE</div>
         <div className="recent-intro-copy">
           <h1>把散落的文件，<br />安静地放回位置。</h1>
           <p>扫描只建立索引；整理、清理和恢复都先给你看一遍。</p>

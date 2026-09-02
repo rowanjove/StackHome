@@ -60,10 +60,10 @@ export function Sidebar({ page, onNavigate }: SidebarProps) {
   return (
     <aside className="sidebar" aria-label="主导航">
       <div className="sidebar-brand">
-        <div className="sidebar-mark"><BrandMark title="归栈" /></div>
+        <div className="sidebar-mark"><BrandMark title="StackHome 归栈" /></div>
         <div>
-          <div className="sidebar-title">归栈</div>
-          <div className="sidebar-caption">本地文件工作台</div>
+          <div className="sidebar-title">StackHome</div>
+          <div className="sidebar-caption">归栈 · 本地文件工作台</div>
         </div>
         <span className="sidebar-edition">LOCAL</span>
       </div>

@@ -58,7 +58,7 @@ $manifest = [PSCustomObject]@{
     createdAt = (Get-Date).ToUniversalTime().ToString("o")
     root = $root
     samples = $results
-    purpose = "Use these local samples with the 归栈 Files and Organizer pages. Record RAM, CPU, UI responsiveness and task-progress event rate separately."
+    purpose = "Use these local samples with the StackHome Files and Organizer pages. Record RAM, CPU, UI responsiveness and task-progress event rate separately."
 }
 $manifest | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $root "manifest.json") -Encoding UTF8
 $results | Format-Table -AutoSize

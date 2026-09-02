@@ -92,7 +92,7 @@ export default function App() {
         <header className="workspace-header">
           <div className="workspace-title-block">
             <span className="workspace-index">{String(Object.keys(pageMeta).indexOf(page) + 1).padStart(2, "0")}</span>
-            <div><span className="breadcrumb">归栈 / {meta.description}</span><h2>{meta.label}</h2></div>
+            <div><span className="breadcrumb">StackHome / {meta.description}</span><h2>{meta.label}</h2></div>
           </div>
           <div className="header-context"><span>本机存放</span><span className="header-separator" /><span>改动前先预览</span></div>
         </header>

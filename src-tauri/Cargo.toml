@@ -1,11 +1,11 @@
 [package]
-name = "guizhan"
-version = "0.6.1"
-description = "归栈本地文件工作台"
+name = "stackhome"
+version = "0.6.2"
+description = "StackHome local-first file organizer and backup workspace for Windows"
 edition = "2021"
 
 [lib]
-name = "windows_easy_backup_lib"
+name = "stackhome_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]

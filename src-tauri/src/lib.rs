@@ -329,7 +329,7 @@ fn setup_tray(app: &mut tauri::App) -> tauri::Result<()> {
     let menu = Menu::with_items(app, &[&open, &quit])?;
     let mut builder = TrayIconBuilder::with_id("main")
         .menu(&menu)
-        .tooltip("归栈")
+        .tooltip("StackHome · 归栈")
         .show_menu_on_left_click(true)
         .on_menu_event(|app, event| match event.id.as_ref() {
             "open" => {
