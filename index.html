@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>归栈 · 本地文件工作台</title>
+    <script>
+      window.__BACKUP_STARTUP_ERROR__ = null;
+
+      function showStartupError(message) {
+        window.__BACKUP_STARTUP_ERROR__ = message;
+        var root = document.getElementById("root");
+        if (!root) return;
+        root.innerHTML =
+          '<div style="min-height:100vh;padding:32px;font-family:Segoe UI,Microsoft YaHei UI,sans-serif;background:#f6f6f6;color:#1f1f1f;">' +
+          '<div style="max-width:920px;margin:0 auto;border:1px solid #e5e5e5;border-radius:8px;padding:24px;background:#ffffff">' +
+          "<h1 style=\"margin:0 0 12px;font-size:28px\">应用启动失败</h1>" +
+          "<p style=\"margin:0 0 12px;color:#616161\">前端资源已加载，但初始化过程中发生错误。</p>" +
+          '<pre style="white-space:pre-wrap;word-break:break-word;background:#f6f6f6;padding:16px;border-radius:6px;overflow:auto;">' +
+          String(message).replace(/[&<>]/g, function (char) {
+            return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[char];
+          }) +
+          "</pre>" +
+          "</div></div>";
+      }
+
+      window.addEventListener("error", function (event) {
+        if (event && event.error) {
+          showStartupError(event.error.stack || event.error.message || String(event.error));
+        } else if (event) {
+          showStartupError(event.message || "未知启动错误");
+        }
+      });
+
+      window.addEventListener("unhandledrejection", function (event) {
+        var reason = event && event.reason ? event.reason : "未知 Promise 错误";
+        showStartupError(reason && reason.stack ? reason.stack : String(reason));
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+  </html>

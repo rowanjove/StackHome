@@ -1,0 +1,50 @@
+# Dependencies and build output
+node_modules/
+dist/
+src-tauri/target/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local configuration, credentials, databases, and diagnostics
+.env
+.env.*
+!.env.example
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+*.tmp
+*.bak
+*.dmp
+*.pdb
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Release binaries are distributed separately after a clean release build
+release/*.exe
+release/*.msi
+release/*.msix
+release/*.zip
+release/*.7z
+
+# Unrelated local research material
+/呼和浩特租房汇总_2026-05-10.md
+
+# Internal development records kept only in the local workspace
+/AGENTS.md
+/ARCHITECTURE.md
+/CURRENT_ARCHITECTURE.md
+/MIGRATION.md
+/PRD_IMPLEMENTATION_AUDIT.md
+/PROJECT_DOCUMENTATION.md
+/TEST_REPORT.md
+/备份工具设计文档_v2.md
+/docs/

@@ -1,0 +1,13 @@
+<WixLocalization
+  Culture="zh-CN"
+  xmlns="http://schemas.microsoft.com/wix/2006/localization"
+>
+  <String Id="LaunchApp">启动归栈</String>
+  <String Id="DowngradeErrorMessage">
+    已安装更新版本的归栈。
+  </String>
+  <String Id="PathEnvVarFeature">
+    将归栈的安装目录添加到 PATH 系统环境变量中，以便在任意位置直接调用该程序。
+  </String>
+  <String Id="InstallAppFeature">安装归栈。</String>
+</WixLocalization>
