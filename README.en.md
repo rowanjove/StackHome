@@ -48,7 +48,7 @@ StackHome supports Windows 10/11 x64. The current binaries are not commercially 
 | Backend | Rust |
 | Local storage | SQLite WAL for indexes, tasks, rules, plans, and history; file contents are never stored in the database |
 | Supported platform | Windows 10/11 x64 |
-| License | MIT |
+| License | Apache-2.0 |
 
 The existing application identifier and data directory remain unchanged for upgrade compatibility. Public branding, window titles, and release files use StackHome.
 
@@ -78,4 +78,4 @@ StackHome does not currently provide PDF/DOCX text extraction, OCR, cloud sync, 
 
 ## License
 
-[MIT](LICENSE)
+[Apache-2.0](LICENSE)
