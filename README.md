@@ -48,7 +48,7 @@ StackHome 是一款面向 Windows 的本地文件工作台，用于文件索引�
 | 后端 | Rust |
 | 本地存储 | SQLite WAL；只保存索引、任务、规则、计划和历史，不保存文件内容 |
 | 支持平台 | Windows 10/11 x64 |
-| 开源协议 | MIT |
+| 开源协议 | Apache-2.0 |
 
 为兼容旧版本，应用标识和既有本地数据目录保持不变。公开产品名、窗口标题和发布文件统一使用 StackHome。
 
@@ -78,4 +78,4 @@ StackHome 尚未提供 PDF/DOCX 正文抽取、OCR、云同步、账号系统或
 
 ## License
 
-[MIT](LICENSE)
+[Apache-2.0](LICENSE)
